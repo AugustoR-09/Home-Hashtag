@@ -1,0 +1,908 @@
+/* Global */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #404040;
+	font-size: 1.6rem;
+	line-height: 1.4;
+	background-color: #f4f5f7;
+}
+
+h2 {
+	font-size: 2.76rem;
+	line-height: 1.1;
+	font-weight: 400;
+}
+
+h3,
+.blog-titulopost,
+.rodape-titulo {
+	font-size: 2.3rem;
+	line-height: 1.2;
+}
+
+strong {
+	font-weight: 600;
+}
+
+ul {
+	list-style: none;
+}
+
+input {
+	padding: 1.02rem;
+	background-color: white;
+	box-shadow: inset 0 0 0.2rem 0.2rem rgba(0, 0, 0, 0.15);
+	border: 0;
+	border-radius: 0.8rem;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	color: #404040;
+}
+
+input:focus {
+	outline: none;
+}
+
+input::placeholder {
+	color: #757575;
+}
+
+.secao {
+	padding: 7.63rem 2rem;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+}
+
+.container-diferenciais,
+.container-blog {
+	border-radius: 5rem;
+	box-shadow: inset 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+
+button,
+a {
+	cursor: pointer;
+}
+
+.botao {
+	display: inline-block;
+	font-size: 2.4rem;
+	font-weight: 700;
+	text-decoration: none;
+	border-radius: 3rem;
+	padding: 0.65rem 2.5rem;
+	color: white;
+	box-shadow: 0 0.21rem 0.8rem rgba(0, 0, 0, 0.15);
+	border: 0;
+	border-bottom: solid 0.4rem #993c38;
+	border-right: solid 0.4rem #993c38;
+}
+
+.realce-semibold {
+	font-weight: 600;
+}
+
+.hero-paragrafo,
+.comoajudar-lista,
+.comoajudar-paragrafo,
+.diferenciais-p,
+.rodape-subtitulo {
+	font-size: 1.92rem;
+	line-height: 1.3;
+}
+
+.caixa-gratuito-h3,
+.caixa-blog-h2 {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	display: inline-block;
+	padding: 0.42rem 1.6rem;
+	color: white;
+	border-radius: 1rem;
+	transform: rotate(-3deg) translate(-50%, -50%);
+	box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.15);
+}
+
+/* Cabeçalho */
+
+.cabecalho {
+	position: sticky;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	background-color: white;
+	padding: 1.6rem 3.12rem;
+	box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cabecalho img {
+	width: 10rem;
+}
+
+nav ul {
+	display: flex;
+	justify-content: baseline;
+	flex-flow: row;
+	gap: 2.5rem;
+}
+
+.item-lista-cabecalho a {
+	color: #112e61;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 600;
+	transition: color ease-in 200ms;
+}
+
+.item-lista-cabecalho a:hover,
+.item-lista-cabecalho a:active {
+	color: #f60;
+}
+
+.contem-filhos::after {
+	content: '\2bc6';
+}
+
+.contem-filhos {
+	position: relative;
+}
+
+.contem-filhos ul {
+	display: none;
+}
+
+.contem-filhos:hover ul {
+	position: absolute;
+	background-color: white;
+	display: flex;
+	flex-flow: column;
+	gap: 0;
+	box-shadow: inset 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.15);
+	border-radius: 2.5rem;
+	padding: 0.62rem 0;
+	align-items: stretch;
+	width: max-content;
+	right: -2.5rem;
+}
+
+.contem-filhos ul li {
+	padding: 0.52rem 1.6rem;
+	display: block;
+	border-bottom: solid 0.1rem rgba(0, 0, 0, 0.15);
+	margin: 0;
+}
+
+.contem-filhos ul li:last-child {
+	border: none;
+}
+
+/* Seção Hero */
+
+.secao-hero {
+	background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-01.png);
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.secao-hero .container {
+	display: flex;
+	gap: 3.12rem;
+	align-items: center;
+}
+
+h1 {
+	font-size: 3.32rem;
+	line-height: 1.2;
+	font-weight: 600;
+	text-align: justify;
+}
+
+.hero-paragrafo {
+	text-align: justify;
+}
+
+.secao-hero .container :first-child {
+	display: flex;
+	gap: 2rem;
+	flex-flow: column;
+	flex: 1;
+}
+
+.hero-botao {
+	background-image: linear-gradient(180deg, #ff645e, #ff9253);
+	text-align: center;
+}
+
+.hero-botao:hover {
+	border: solid 0.2rem #ff9253;
+	background-color: #ff9253;
+	background-image: none;
+}
+
+iframe {
+	flex: 1;
+	aspect-ratio: 16/9;
+	width: 100%;
+	border-radius: 2.5rem;
+}
+
+/* Seção Conteúdos Gratuitos */
+
+.secao-conteudos {
+	background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-02.png);
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.secao-conteudos .container {
+	display: flex;
+	align-items: center;
+}
+
+.img-conteudos {
+	flex: 45rem;
+	max-width: 44rem;
+	z-index: 1;
+	position: relative;
+	left: 2rem;
+}
+
+.coluna-gratuitos {
+	display: flex;
+	flex-flow: column;
+	gap: 3.9rem;
+	flex: 55;
+}
+
+.titulo_gratuitos {
+	display: flex;
+	gap: 1.6rem;
+	align-items: center;
+}
+
+.seta_roxa {
+	width: 2.4rem;
+}
+
+.caixas-gratuitos {
+	display: flex;
+	gap: 2rem;
+}
+
+.caixa-cursos-hashtag {
+	position: relative;
+	box-shadow: inset 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.15);
+	border-radius: 2.5rem;
+	padding: 2rem;
+	display: inline-block;
+}
+
+.caixa-gratuito-h3 {
+	background-image: linear-gradient(90deg, #aa56e6, #6d42b9);
+}
+
+.caixa_logos {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem 0;
+}
+
+.circulo-logo-curso {
+	display: inline-block;
+	background-color: #e7e7e7;
+	border-radius: 50%;
+	box-shadow: inset 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.15);
+	padding: 1.02rem;
+	width: 4.5rem;
+	height: 4.5rem;
+}
+
+.circulo-logo-curso img {
+	width: 100%;
+}
+
+.gratuito-realce {
+	color: #7a40be;
+	font-weight: 600;
+}
+
+.gratuito-h3 {
+	font-weight: 700;
+}
+
+.gratuitos-coluna {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.65rem;
+	margin: 1rem;
+}
+
+.gratuito-link-lista:link,
+.gratuito-link-lista:visited {
+	display: flex;
+	padding: 0.42rem 3.12rem;
+	background-color: #eee;
+	border-radius: 2.5rem;
+	box-shadow: inset 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.15);
+	font-size: 1.92rem;
+	line-height: 1.3;
+	text-decoration: none;
+	color: inherit;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+}
+
+.gratuito-link-lista:hover,
+.gratuito-link-lista:active {
+	text-decoration: underline;
+}
+
+.gratuito-link-lista img,
+.gratuito-link-lista svg {
+	width: 1.8rem;
+}
+
+/* Seção Diferenciais */
+
+.container-diferenciais {
+	background-color: white;
+}
+
+.caixa-titulo-diferenciais {
+	border-top-left-radius: 5rem;
+	border-top-right-radius: 5rem;
+	padding: 4.88rem;
+	background-image: linear-gradient(225deg, #196b9f, #1a82a7);
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	gap: 4.88rem;
+}
+
+.caixa-diferenciais-h2 {
+	border-left: solid 0.5rem #ffb20f;
+	padding: 0.52rem 0 0.52rem 1.6rem;
+	flex: 1;
+}
+
+.diferenciais-p {
+	text-align: end;
+	flex: 1;
+}
+
+.caixa-restante-diferenciais {
+	padding: 4.88rem;
+}
+
+.caixas-diferenciais {
+	display: flex;
+	justify-content: center;
+	gap: 2.5rem;
+	align-items: center;
+}
+
+.caixa-itens-diferenciais {
+	position: relative;
+	border-radius: 2.5rem;
+	background-color: white;
+	box-shadow: 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.15);
+	padding: 3.12rem 2.5rem;
+	flex: 1;
+}
+
+.caixa-imagem-diferenciais {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: inline-block;
+	border-radius: 1.5rem;
+	background-color: #ffaf00;
+	width: 10rem;
+	height: 10rem;
+	padding: 1.6rem;
+	box-shadow: inset 0 0 0.8rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.caixa-imagem-diferenciais img {
+	width: 100%;
+}
+
+.texto-diferenciais {
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+	flex-flow: column;
+	margin-top: 1.6rem;
+	text-align: center;
+}
+
+.diferenciais-empresas div {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.diferenciais-empresas img {
+	height: 3rem;
+	filter: grayscale(100%);
+}
+
+.logo-loreal,
+.logo-disney {
+	opacity: 60%;
+}
+
+.logo-subsea,
+.logo-animale {
+	opacity: 75%;
+}
+
+.diferenciais-h3 {
+	color: #005e88;
+	font-weight: 600;
+	padding-top: 2rem;
+	text-align: center;
+}
+
+.diferenciais-h3-empresas {
+	font-weight: 400;
+	text-align: center;
+	padding: 3.12rem 0;
+}
+
+.diferenciais-h3-empresas a {
+	color: #005e88;
+	font-weight: 700;
+	text-decoration: none;
+	transition: color ease-in 200ms;
+}
+
+.diferenciais-h3-empresas a:hover {
+	color: #f60;
+}
+
+/* Seção O que falam */
+
+.secao-oquefalam {
+	background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-04.png);
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.secao-oquefalam .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+}
+
+.oquefalam-titulo {
+	color: white;
+	display: flex;
+	gap: 1.6rem;
+}
+
+.oquefalam-carrossel {
+	display: flex;
+	flex-flow: column;
+	align-self: stretch;
+	position: relative;
+	gap: 2rem;
+}
+
+.oquefalam-videos {
+	display: flex;
+	align-self: stretch;
+	gap: 2rem;
+}
+
+.oquefalam-carrossel-img {
+	flex: 1;
+	background-color: #7489af;
+	background-blend-mode: multiply;
+	position: relative;
+	display: inline-block;
+	background-position: 50%;
+	background-size: cover;
+	aspect-ratio: 16/9;
+	border-radius: 2.5rem;
+}
+
+.oquefalam-carrossel-img--1 {
+	background-image: url(https://i3.ytimg.com/vi/N_EZD04zmrw/hqdefault.jpg);
+}
+.oquefalam-carrossel-img--2 {
+	background-image: url(https://i3.ytimg.com/vi/auqWeBJLJHY/hqdefault.jpg);
+}
+.oquefalam-carrossel-img--3 {
+	background-image: url(https://i3.ytimg.com/vi/FD79IpCaM1Y/hqdefault.jpg);
+}
+
+.oquefalam-seta {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+}
+
+.seta--esquerda {
+	left: 0;
+	transform: translate(-150%, -65%);
+}
+
+.seta--direita {
+	right: 0;
+	transform: translate(160%, -65%);
+}
+
+.seta-player {
+	cursor: pointer;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 3rem;
+}
+
+.oquefalam-navegacao {
+	display: flex;
+	align-self: stretch;
+	justify-content: center;
+	gap: 0.42rem;
+}
+
+.item-navegacao {
+	cursor: pointer;
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+	border-radius: 50%;
+	background-color: #86a8bc;
+}
+
+.item-navegacao.ativa {
+	background-color: #14577f;
+}
+
+.botao-oquefalam {
+	background-image: linear-gradient(180deg, #196c9f, #1a80a7);
+	border-bottom-color: #14577f;
+	border-right-color: #14577f;
+}
+
+.botao-oquefalam:hover {
+	border: solid 0.2rem #1a80a7;
+	background-image: none;
+	background-color: #1a80a7;
+}
+
+/* Seção Na mídia */
+
+.secao-namidia {
+	padding: 3.9rem 0;
+	background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUND-Banner-05_1.png);
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.secao-namidia .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.seta-namidia,
+.h2-namidia {
+	display: inline-block;
+}
+
+/* Seção Blog */
+
+.container-blog {
+	position: relative;
+	background-color: #f9f9f9;
+	padding: 4.88rem;
+}
+
+.caixa-blog-h2 {
+	width: max-content;
+	background-image: linear-gradient(90deg, #feb914, #f6a50b);
+	padding: 1.02rem 3.12rem;
+}
+
+.caixas-blog {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 1.6rem;
+	padding-top: 3rem;
+}
+
+.caixa-postblog {
+	flex: 1 44rem;
+	display: inline-block;
+	border-radius: 2.5rem;
+	box-shadow: inset 0 0 0.4rem 0.15rem rgba(0, 0, 0, 0.15);
+	padding: 2rem;
+	background-color: #fff;
+}
+
+.caixa-postblog img {
+	width: 100%;
+}
+
+.blog-postadoem {
+	font-size: 1.33rem;
+	line-height: 1.5;
+}
+
+.blog-postadoem a {
+	font-weight: 600;
+	color: #f7a70c;
+	text-decoration: none;
+}
+
+.blog-titulopost {
+	color: inherit;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+/* Seção Como ajudar */
+
+.secao-comoajudar {
+	padding: 0;
+}
+
+.secao-sec-laranja {
+	background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUND-banner-07.png);
+	background-position: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.secao-sec-laranja,
+.secao-sec-cinza {
+	padding: 7.63rem 2rem;
+}
+
+.secao-sec-laranja .container {
+	display: flex;
+	flex-flow: column;
+	gap: 3.3rem;
+	align-items: center;
+	max-width: 86rem;
+}
+
+.caixa-comoajudar-h2 {
+	display: inline-block;
+	padding: 0.42rem 1.6rem;
+	color: white;
+	border-radius: 1rem;
+	box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.15);
+	background-image: linear-gradient(90deg, #14a1d5, #1a8ad4);
+}
+
+.comoajudar-lista {
+	border-radius: 2.5rem;
+	box-shadow: inset 0 0 0.8rem 0.15rem rgba(0, 0, 0, 0.15);
+	padding: 2.5rem;
+	background-color: #f9f9f9;
+	display: flex;
+	flex-flow: column;
+	gap: 1.02rem;
+}
+
+.comoajudar-lista li {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.secao-sec-cinza .container {
+	max-width: 86rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+}
+
+.comoajudar-lista a:link,
+.comoajudar-lista a:visited,
+.comoajudar-paragrafo a:link,
+.comoajudar-paragrafo a:visited {
+	color: #008ff7;
+	font-weight: 600;
+}
+
+.comoajudar-lista a:hover,
+.comoajudar-lista a:active,
+.comoajudar-paragrafo a:hover,
+.comoajudar-paragrafo a:active {
+	color: #0056b3;
+}
+
+.comoajudar-paragrafo b {
+	font-weight: 600;
+}
+
+/* Seção Minicurso */
+
+.secao-minicurso {
+	background-image: linear-gradient(90deg, #9e4ad7, #753db6);
+	color: white;
+}
+
+.secao-minicurso .container {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	align-items: center;
+	width: 100%;
+}
+
+#minicurso-form {
+	width: 100%;
+	display: flex;
+	gap: 4rem;
+	justify-content: baseline;
+}
+
+#minicurso-form div {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	flex: 1;
+}
+
+.botao-minicurso {
+	background-color: #ffba29;
+	border-bottom-color: #664a10;
+	border-right-color: #664a10;
+	justify-self: center;
+	align-self: last baseline;
+}
+
+.botao-minicurso:hover {
+	border: solid 0.2rem #ffba29;
+}
+
+/* Rodapé */
+footer .container {
+	display: flex;
+	gap: 4.4rem;
+	align-items: start;
+}
+
+.logo-footer {
+	width: 18rem;
+}
+
+.coluna_footer {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.subsecao-maior {
+	display: flex;
+	flex-flow: column;
+	gap: 1.6rem;
+}
+
+.subsecao-cursoonline {
+	display: flex;
+	flex-flow: column;
+	gap: 1.28rem;
+}
+
+.subsecao-assistente {
+	display: flex;
+	flex-flow: column;
+	gap: 1.02rem;
+}
+
+.rodape-titulo,
+.rodape-subtitulo,
+.rodape-seg-subtitulo {
+	font-weight: 600;
+}
+
+.rodape-link {
+	color: #1a77a4;
+}
+
+.icones-redessociais {
+	display: flex;
+	gap: 0.5rem;
+}
+
+footer svg {
+	fill: #404040;
+	stroke: #404040;
+	width: 2.4rem;
+	display: inline-block;
+}
+
+.link-redessociais:hover svg {
+	fill: #f60;
+	stroke: #f60;
+}
+
+footer a.link-redessociais:link,
+footer a.link-redessociais:visited,
+footer a.link-redessociais:hover,
+footer a.link-redessociais:active {
+	color: transparent;
+}
+
+footer a:active,
+footer a:hover {
+	color: #f60;
+}
+
+.form-newsletter {
+	border-radius: 2.5rem;
+	box-shadow: inset 0 0 0.8rem 0.15rem rgba(0, 0, 0, 0.15);
+	padding: 2.5rem;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	flex-direction: column;
+}
+
+.botao-newsletter {
+	background-color: #1a77a4;
+	border-bottom-color: #0c374d;
+	border-right-color: #0c374d;
+}
+
+.botao-newsletter:hover {
+	border: solid 0.2rem #1a77a4;
+}
+
+/* Fixado */
+
+.logo-whatsapp {
+	position: fixed;
+	right: 3rem;
+	bottom: 3rem;
+	width: 10rem;
+}
+
+.logo-whatsapp:hover {
+	transform: translate(0.5rem, 0.5rem);
+}
+
+.logo-whatsapp img {
+	width: 100%;
+}
