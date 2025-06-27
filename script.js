@@ -1,1 +1,1 @@
-document.addEventListener('DOMContentLoaded', alert('Bom dia'));
+document.addEventListener('DOMContentLoaded', console.log('Visitou o site'));
